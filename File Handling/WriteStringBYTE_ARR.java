@@ -13,12 +13,9 @@ class WriteByteString{
 			}
 			else{
 				System.out.println("enter string ");
-				Str=sc.nextLine(); // hello how are u ?
-				
+				Str=sc.nextLine(); // hello how are u ?				
 				//dt arr[]=new dt[size]
 				byte b[]=Str.getBytes();
-				
-				
 				fout.write(b);
 				fout.close();
 			}
