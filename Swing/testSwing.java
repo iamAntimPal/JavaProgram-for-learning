@@ -1,14 +1,16 @@
 //Swing Application without inheriting Frame without constructor 
-/*
+
 import javax.swing.*;
 class testSwing{
 	public static void main(String[] args) {
 		JFrame F=new JFrame();
+		F.setLayout(null);
+		F.setTitle("First Swing Application");
 		JLabel L1=new JLabel("Employee Name");
 		L1.setBounds(30,70,80,30);
 
 		JTextField TF=new JTextField();
-		TF.setBounds(0,0,80,30);
+		TF.setBounds(300,300,80,30);
 
 		JButton B1=new JButton("Click me");
 		B1.setBounds(30,120,80,30);
@@ -19,11 +21,11 @@ class testSwing{
 
 		F.setSize(500,500);
 		F.setVisible(true);
-		F.setLayout(null);
-		F.setTitle("First Swing Application");
+		
+		
 	}
 }
-*/
+
 
 // Swing Application by inheriting Frame and with construtor
 /*
@@ -59,15 +61,15 @@ class testSwing2 extends JFrame
 */
 
 // Swing Application by inheriting Frame with constructor 
-
+/*
 import javax.swing.*;
-
-class testSwing3 extends JFrame
+import java.awt.event.*;	
+class testSwing3 extends JFrame implements ActionListener
 {
 
 	JLabel L1,L2;
 	JButton B1;
-	JtextArea area;
+	JTextArea area;
 	testSwing3()
 	{
 		L1=new JLabel();
@@ -75,7 +77,7 @@ class testSwing3 extends JFrame
 		L2=new JLabel();
 		L2.setBounds(160,25,100,30);
 
-		area=new JtextArea();
+		area=new JTextArea();
 		area.setBounds(20,75,250,200);
 
 		B1=new JButton("Click me ");
@@ -106,3 +108,4 @@ class testSwing3 extends JFrame
 		testSwing3 ts=new testSwing3();
 	}
 }
+*/
